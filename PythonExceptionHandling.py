@@ -1,8 +1,13 @@
-print("Hello World")
 n=10
 res=0
 try:
+    print("try")
     res=n/0
-except ZeroDivisionError:
+except Exception:
+    print("Exception Block")
     print("Cant be Divided by zero")
-print(res)
+else:
+    print("Else Block")
+    print(res)
+finally:
+    print("finally")
